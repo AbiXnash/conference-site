@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ICMAT-2023</title>
+    <!-- favicon -->
+    <link href="src.jpg" rel=icon>
+    <!-- web-fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,500' rel='stylesheet' type='text/css'>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Style CSS -->
+    <link href="css/style.css" rel="stylesheet">
+	<style>
+		/* Add your global styles here */
+		
+body {
+	font-family: 'Arial', sans-serif;
+}
+
+
+		.collapsible {
+			cursor: pointer;
+			padding: 18px;
+			width: 100%;
+			border: none;
+			text-align: left;
+			outline: none;
+			font-size: 18px;
+			background-color: #f1f1f1;
+		}
+	
+		.contents {
+			padding: 0 18px;
+			display: none;
+			overflow: hidden;
+			background-color: #f9f9f9;
+		}
+	</style>
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar">
+<div id="main-wrapper">
+    <!-- Page Preloader -->
+    <div id="preloader">
+        <div id="status">
+            <div class="status-mes"></div>
+        </div>
+    </div>
+
+    <header class="header">
+        <!-- Navigation -->
+        <nav class="navbar main-menu" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand page-scroll" href="#page-top"><img src="img/src.jpg" alt=""></a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                    <ul class="nav navbar-nav">
+                        <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                        <li class="hidden"><a href="#page-top"></a></li>
+                        <li><a class="page-scroll" href="index.html">Home</a></li>
+                        <li><a class="page-scroll" href="speaker.html">Committee</a></li>
+                        <li><a class="page-scroll" href="call-for-paper.html">Call for Papers</a></li>
+                        <li><a class="page-scroll" href="keynote.html">Keynote</a></li>
+                        <li><a class="page-scroll" href="submission.html">Submission</a></li>
+                        <li><a class="page-scroll" href="publication.html">Publication</a></li>
+                        <li><a class="page-scroll" href="registration.html">Registration</a></li>
+                        <li><a class="page-scroll" href="venue.html">Venue</a></li>
+                        
+                        <li><a class="page-scroll" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container -->
+        </nav>
+
+        <!-- .nav -->
+
+    </header>
+
+    <div style="height: 110vh;" class="jumbotron text-center">
+        <div class="content">
+            <h1 >International Conference on Mathematics and its Applications in Technology</h1>
+            <!--<div class="scrolling-text">Your scrolling text goes here. Make it as long as you want!</div>-->
+            
+            <div class="event-date">March 24 - 25, 2023</div>
+            
+            <p class="lead">
+                <b class = "circle-border">Srinivasa Ramanujan Centre
+                    <a href="https://www.sastra.edu/" target="_blank">SASTRA Deemed to be University</a>
+                </b>
+                <p>Kumbakonam, Tamil Nadu</p>
+            </p>
+            <button style = "padding-top: .9%; padding-bottom: .9%;" type="button" class="btn btn-default btn-lg">Brochure</button>
+        </div>
+    </div>
+    <!-- .Jumbotron-->
+    
+	<section style="padding-top: 10%;"  id="section-intro" class="section-wrapper about-event">
+		
+		<div class="section-title">
+			<h1>COMMITTEE</h1>
+		</div>
+		<div class="collapsible" onclick="toggleContent('content1')">CONFERENCE COMMITTEE</div>
+		<div class="contents" id="content1">
+			<p>
+				<h3>CHIEF PATRON</h3> <hr>
+				<strong>Prof. R. Sethuraman</strong> <br> Chancellor, SASTRA.
+			</p>
+			<p>
+				<h3>PATRONS</h3> <hr>
+				<strong>Prof. S. Vaidhyasubramaniam</strong> <br> Vice Chancellor, SASTRA
+			</p>
+			<p><strong>Prof. R. Chandramouli</strong><br>Registrar, SASTRA</p>
+			<p><strong>Prof. S. Swaminathan</strong><br>Dean P&D, SASTRA</p>
+			<p>
+				<h3>CONVENOR</h3> <hr>
+				<strong>Dr. D. Narasimhan, </strong>Dept. of Mathematics,
+				<br> Srinivasa Ramanujan Centre<br>SASTRA,Kumbakonam</p>
+				
+			<p>
+				<h3>CO-CONVENORS</h3> <hr>
+				<strong>Dr. A. Srinivasan</strong>, Dept. of ECE
+				<br> Srinivasa Ramanujan Centre<br>SASTRA,Kumbakonam</p>
+				<strong>Dr. S. Meganathan</strong>, Dept. of CSE
+				<br> Srinivasa Ramanujan Centre<br>SASTRA,Kumbakonam</p>
+			</p>
+			<br>
+			<em>Srinivasa Ramanujan Centre, SASTRA</em>
+		</div>
+	
+		<div class="collapsible" onclick="toggleContent('content2')">ADVISORY COMMITTEE</div>
+		<div class="contents" id="content2">
+			<p>
+				<strong>Dr. Tzung-Pei Hong, </strong> <br>  AI Research Center, National University of Kaohsiung, Taiwan
+			</p>
+			<p>
+				<strong>Dr. Tzung-Pei Hong, </strong> <br>  AI Research Center, National University of Kaohsiung, Taiwan
+			</p>
+			<p>
+				<strong>Dr. Tzung-Pei Hong, </strong> <br>  AI Research Center, National University of Kaohsiung, Taiwan
+			</p>
+			<p>
+				<strong>Dr. Tzung-Pei Hong, </strong> <br>  AI Research Center, National University of Kaohsiung, Taiwan
+			</p>
+			<p>
+				<strong>Dr. Tzung-Pei Hong, </strong> <br>  AI Research Center, National University of Kaohsiung, Taiwan
+			</p>
+			<p>
+				<strong>Dr. Tzung-Pei Hong, </strong> <br>  AI Research Center, National University of Kaohsiung, Taiwan
+			</p>
+			
+			
+		</div>
+
+	
+		<div class="collapsible" onclick="toggleContent('content3')">ORGANIZING COMMITTE</div>
+		<div class="contents" id="content3">
+			
+		</div>
+	
+		<div class="collapsible" onclick="toggleContent('content4')">TECHNICAL COMMITTEE</div>
+		<div class="contents" id="content4">
+			
+		</div>
+	
+		<script>
+			function toggleContent(contentId) {
+				var content = document.getElementById(contentId);
+				if (content.style.display === "block") {
+					content.style.display = "none";
+				} else {
+					content.style.display = "block";
+				}
+			}
+		</script>
+    
+    <hr>
+
+	
+
+    <footer class="footer">
+        <div class="copyright-section">
+            <div class="container">
+                <div class="col-md-12">
+                    <div class="copytext text-center">&copy; All rights reserved |  <a href="https://www.sastra.edu/" target="_blank">SASTRA Deemed to be University</a></div>
+                </div>
+            </div>
+            <!-- .container -->
+        </div>
+        <!-- .copyright-section -->
+    </footer>
+    <!-- .footer -->
+
+</div>
+<!-- #main-wrapper -->
+
+
+<!-- jquery -->
+<script src="js/jquery-2.1.4.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="js/bootstrap.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="js/jquery.easing.min.js"></script>
+
+<!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+
+
+<!--<script src="js/one-page-nav.js"></script>-->
+<script src="js/scripts.js"></script>
+</body>
+</html>

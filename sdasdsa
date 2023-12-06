@@ -1,0 +1,94 @@
+<section style="padding-top: 10%;"  id="section-intro" class="section-wrapper about-event">
+		
+		<div class="section-title">
+			<h1>COMMITTEE</h1>
+		</div>
+		<div class="collapsible" onclick="toggleContent('content1')">CONFERENCE COMMITTEE</div>
+		<div class="content" id="content1">
+			<p>
+				<h3>CHIEF PATRON</h3> <hr>
+				<strong>Prof. R. Sethuraman</strong> <br> Chancellor, SASTRA.
+			</p>
+			<p>
+				<h3>PATRONS</h3> <hr>
+				<strong>Prof. S. Vaidhyasubramaniam</strong> <br> Vice Chancellor, SASTRA
+			</p>
+			<p><strong>Prof. R. Chandramouli</strong><br>Registrar, SASTRA</p>
+			<p><strong>Prof. S. Swaminathan</strong><br>Dean P&D, SASTRA</p>
+			<p>
+				<h3>CONVENOR</h3> <hr>
+				<strong>Dr. D. Narasimhan, </strong>Dept. of Mathematics,
+				<br> Srinivasa Ramanujan Centre<br>SASTRA,Kumbakonam</p>
+				
+			<p>
+				<h3>CO-CONVENORS</h3> <hr>
+				<strong>Dr. A. Srinivasan</strong>, Dept. of ECE
+				<br> Srinivasa Ramanujan Centre<br>SASTRA,Kumbakonam</p>
+				<strong>Dr. S. Meganathan</strong>, Dept. of CSE
+				<br> Srinivasa Ramanujan Centre<br>SASTRA,Kumbakonam</p>
+			</p>
+			<br>
+			<em>Srinivasa Ramanujan Centre, SASTRA</em>
+		</div>
+	
+		<div class="collapsible" onclick="toggleContent('content2')">ADVISORY COMMITTEE</div>
+		<div class="content" id="content2">
+			<p>
+				<strong>Dr. Tzung-Pei Hong, </strong> <br>  AI Research Center, National University of Kaohsiung, Taiwan
+			</p>
+			<p>
+				<strong>Dr. Tzung-Pei Hong, </strong> <br>  AI Research Center, National University of Kaohsiung, Taiwan
+			</p>
+			<p>
+				<strong>Dr. Tzung-Pei Hong, </strong> <br>  AI Research Center, National University of Kaohsiung, Taiwan
+			</p>
+			<p>
+				<strong>Dr. Tzung-Pei Hong, </strong> <br>  AI Research Center, National University of Kaohsiung, Taiwan
+			</p>
+			<p>
+				<strong>Dr. Tzung-Pei Hong, </strong> <br>  AI Research Center, National University of Kaohsiung, Taiwan
+			</p>
+			<p>
+				<strong>Dr. Tzung-Pei Hong, </strong> <br>  AI Research Center, National University of Kaohsiung, Taiwan
+			</p>
+			
+			
+		</div>
+
+	
+		<div class="collapsible" onclick="toggleContent('content3')">ORGANIZING COMMITTE</div>
+		<div class="content" id="content3">
+			
+		</div>
+	
+		<div class="collapsible" onclick="toggleContent('content4')">TECHNICAL COMMITTEE</div>
+		<div class="content" id="content4">
+			
+		</div>
+	
+		<script>
+			function toggleContent(contentId) {
+				var content = document.getElementById(contentId);
+				if (content.style.display === "block") {
+					content.style.display = "none";
+				} else {
+					content.style.display = "block";
+				}
+			}
+		</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
