@@ -17,16 +17,37 @@
 		body {
 			font-family: 'Arial', sans-serif;
 		}
-
 		.collapsible {
 			cursor: pointer;
 			padding: 18px;
 			width: 100%;
 			border: none;
-			text-align: left;
 			outline: none;
 			font-size: 18px;
 			background-color: #f1f1f1;
+			user-select: none;
+			display: flex;
+			align-items: center;
+			justify-content: space-between; /* Align items to the start and end */
+  		}
+
+		.collapsible::after {
+			content: '\002B'; /* Plus sign (+) */
+			font-size: 20px;
+		}
+
+		.active::after {
+			content: '\2212'; /* Minus sign (-) */
+		}
+
+		.collapsible::after {
+			content: '\002B'; /* Plus sign (+) */
+			font-size: 20px;
+			margin-left: 5px;
+		}
+
+		.active::after {
+			content: '\2212'; /* Minus sign (-) */
 		}
 	
 		.contents {
@@ -113,7 +134,8 @@
 		<div class="section-title">
 			<h1>COMMITTEE</h1>
 		</div>
-		<div class="collapsible" onclick="toggleContent('content1')">CONFERENCE COMMITTEE</div>
+		<div class="collapsible" onclick="toggleContent('content1')">CONFERENCE COMMITTEE </div>
+		<span class="icon" id="icon1"></span>
 		<div class="contents" id="content1">
 			<p>
 				<h3>CHIEF PATRON</h3> <hr>
@@ -141,7 +163,7 @@
 			<em>Srinivasa Ramanujan Centre, SASTRA</em>
 		</div>
 	
-		<div class="collapsible" onclick="toggleContent('content2')">ADVISORY COMMITTEE</div>
+		<div class="collapsible" onclick="toggleContent('content2')">ADVISORY COMMITTEE </div>
 		<div class="contents" id="content2">
 			<p>
 				<strong>Dr. Tzung-Pei Hong, </strong> <br>  AI Research Center, National University of Kaohsiung, Taiwan
@@ -177,7 +199,7 @@
 		</div>
 
 	
-		<div class="collapsible" onclick="toggleContent('content3')">ORGANIZING COMMITTE</div>
+		<div class="collapsible" onclick="toggleContent('content3')">ORGANIZING COMMITTE </div>
 		<div class="contents" id="content3">
 			<p>
 				<h3>ORGANIZING SECRETARIES</h3> <hr>
@@ -237,7 +259,7 @@
 			
 		</div>
 	
-		<div class="collapsible" onclick="toggleContent('content4')">TECHNICAL COMMITTEE</div>
+		<div class="collapsible" onclick="toggleContent('content4')">TECHNICAL COMMITTEE </div>
 		<div class="contents" id="content4">
 			<p>
 				<h3>ORGANIZING COMMITTEE</h3> <hr>
@@ -293,14 +315,20 @@
 		</div>
 	
 		<script>
-			function toggleContent(contentId) {
+			/*function toggleContent(contentId) {
 				var content = document.getElementById(contentId);
 				if (content.style.display === "block") {
 					content.style.display = "none";
 				} else {
 					content.style.display = "block";
 				}
-			}
+			}*/
+			function toggleContent(contentId) {
+				const content = document.getElementById(contentId);
+				content.style.display = content.style.display === 'block' ? 'none' : 'block';
+				const collapsible = document.querySelector('.collapsible');
+				collapsible.classList.toggle('active', content.style.display === 'block');
+		}
 		</script>
     
     <hr>
