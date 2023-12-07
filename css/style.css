@@ -487,6 +487,10 @@ button:focus,
         }
     }
 
+    nav img {
+        max-height: 30px; /* Adjust the height as needed */
+        margin-right: 10px; /* Add some margin to separate the logo from the links */
+      }
 .team .thumbnail img {
     width : 100%;
     }
@@ -748,20 +752,20 @@ button:focus,
     position   : fixed;
     right      : 0;
     top        : 0;
-    z-index    : 9999;
+    z-index    : 9;
     }
 
 #status,
 .status-mes {
-    background-image    : url(../img/preloader.gif);
+    background-image    : url(../img/preloader.png);
     background-position : center;
     background-repeat   : no-repeat;
-    height              : 200px;
-    left                : 50%;
+    height              : 300px;
+    left                : 40%;
     margin              : -100px 0 0 -100px;
     position            : absolute;
-    top                 : 50%;
-    width               : 200px;
+    top                 : 40%;
+    width               : 300px;
     }
 
 .status-mes {
