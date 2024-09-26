@@ -1,181 +1,269 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Contact | ICMAT-2023</title>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact | ICMAT-2025</title>
     <!-- favicon -->
-    <link href="src.png" rel=icon>
+    <link href="src.png" rel="icon" />
     <!-- web-fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,500' rel='stylesheet' type='text/css'>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,500"
+      rel="stylesheet"
+      type="text/css"
+    />
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
     <!-- Style CSS -->
-    <link href="css/style.css" rel="stylesheet">
-	<style>
+    <link href="css/style.css" rel="stylesheet" />
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+      }
+      .contact-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: space-between;
+      }
 
-        body {
-            font-family: 'Arial', sans-serif;
-        }
-        .contact-grid {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: space-between;
-        }
-    
-        .contact-card {
-            flex-basis: 100%;
-            font-size: 16px;
-            line-height: 1.6;
-            color: #333;
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 8px;
-        }
-    
-        .contact-card h2 {
-            text-align: center;
-            font-size: 24px;
-            margin-bottom: 20px;
-        }
+      .contact-card {
+        flex-basis: 100%;
+        font-size: 16px;
+        line-height: 1.6;
+        color: #333;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+      }
 
-	</style>
-</head>
-<body id="page-top" data-spy="scroll" data-target=".navbar">
-<div id="main-wrapper">
-    <!-- Page Preloader -->
-    <div id="preloader">
+      .contact-card h2 {
+        text-align: center;
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body id="page-top" data-spy="scroll" data-target=".navbar">
+    <div id="main-wrapper">
+      <!-- Page Preloader -->
+      <div id="preloader">
         <div id="status">
-            <div class="status-mes"></div>
+          <div class="status-mes"></div>
         </div>
-    </div>
+      </div>
 
-    <header class="header">
+      <header class="header">
         <!-- Navigation -->
         <nav class="navbar main-menu" role="navigation">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand page-scroll" href="#page-top"><img src="img/src.png" alt=""></a>
-                </div>
-
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-                    <ul class="nav navbar-nav">
-                        <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                        <li class="hidden"><a href="#page-top"></a></li>
-                        <li><a class="page-scroll" href="index.html">Home</a></li>
-                        <li><a class="page-scroll" href="committee.html">Committee</a></li>
-                        <li><a class="page-scroll" href="call-for-paper.html">Call for Papers</a></li>
-                        <li><a class="page-scroll" href="keynote.html">Keynote</a></li>
-                        <li><a class="page-scroll" href="submission.html">Submission</a></li>
-                        <li><a class="page-scroll" href="publication.html">Publication</a></li>
-                        <li><a class="page-scroll" href="registration.html">Registration</a></li>
-                        <li><a class="page-scroll" href="venue.html">Venue</a></li>
-                        
-                        <li><a class="page-scroll" href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <!-- /.navbar-collapse -->
+          <div class="container">
+            <div class="navbar-header">
+              <button
+                type="button"
+                class="navbar-toggle"
+                data-toggle="collapse"
+                data-target=".navbar-main-collapse"
+              >
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand page-scroll" href="#page-top"
+                ><img src="img/logo.jpg" alt=""
+              /></a>
             </div>
-            <!-- /.container -->
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div
+              class="collapse navbar-collapse navbar-right navbar-main-collapse"
+            >
+              <ul class="nav navbar-nav">
+                <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                <li class="hidden"><a href="#page-top"></a></li>
+                <li><a class="page-scroll" href="index.html">Home</a></li>
+                <li>
+                  <a class="page-scroll" href="committee.html">Committee</a>
+                </li>
+                <li>
+                  <a class="page-scroll" href="call-for-paper.html"
+                    >Call for Papers</a
+                  >
+                </li>
+                <li><a class="page-scroll" href="keynote.html">Keynote</a></li>
+                <li>
+                  <a class="page-scroll" href="submission.html">Submission</a>
+                </li>
+                <li>
+                  <a class="page-scroll" href="publication.html">Publication</a>
+                </li>
+                <li>
+                  <a class="page-scroll" href="registration.html"
+                    >Registration</a
+                  >
+                </li>
+                <li><a class="page-scroll" href="venue.html">Venue</a></li>
+
+                <li><a class="page-scroll" href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+          </div>
+          <!-- /.container -->
         </nav>
 
         <!-- .nav -->
+      </header>
 
-    </header>
-
-    <div style="height: 120vh;" class="jumbotron text-center">
+      <div style="height: 120vh" class="jumbotron text-center">
         <div class="content">
-            
-            <h1>ICMAT - 2023 / <small><a href="#"> CONTACT </a></small> </h1> <hr>
-            <p class="lead">
-				<div class="event-date circle-border">SUBMISSION OF FULL PAPER: <strong>February 15, 2023</strong></div>
-			<div class="event-date circle-border">ACCEPTANCE NOTIFICATION: <strong>February 28, 2023</strong></div>
-			<div class="event-date circle-border">CONFERENCE REGISTRATION: <strong>March 15, 2023</strong></div>
-            </p><hr>
-            <div class="event-date"><q style="font-style: italic;
+          <h1>
+            ICMAT - 2025 / <small><a href="#"> CONTACT </a></small>
+          </h1>
+          <hr />
+          <div class="container">
+            <h2 class="text-center mb-4" style="color: #ccc">
+              Important Dates
+            </h2>
+            <div class="row">
+              <div class="col-md-4 mb-3">
+                <div class="event-date circle-border p-3 text-center">
+                  <strong>Submission of Full Paper:</strong> <br />
+                  <span>January 20, 2025</span>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="event-date circle-border p-3 text-center">
+                  <strong>Acceptance Notification:</strong> <br />
+                  <span>February 20, 2025</span>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="event-date circle-border p-3 text-center">
+                  <strong>Conference Registration:</strong> <br />
+                  <span>March 20, 2025</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div class="event-date">
+            <q
+              style="
+                font-style: italic;
                 color: #fffefe;
                 font-size: 18px;
                 padding: 10px;
                 background-color: #ffffff00;
                 border-radius: 8px;
                 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-                text-align: center;" > Conference will be conducted in HYBRID (online & offline) mode </q> </div>
-            
+                text-align: center;
+              "
+            >
+              Conference will be conducted in HYBRID (online & offline) mode
+            </q>
+          </div>
         </div>
-    </div>
-    <!-- .Jumbotron-->
-    
-    <div style="padding-top: 20%;" class="contact-grid">
-        <div class="contact-card">
-            <h2>Convenor</h2>
-            <hr>
-            <p><strong>Name: </strong>Dr. D. Narasimhan</p>
-            <p><strong>Phone: </strong>+91 94424 21988</p>
-        </div>
-    
-        <div class="contact-card">
-            <h2>Co-Convenor</h2>
-            <hr>
-            <p><strong>Name: </strong>Dr. A. Srinivasan</p>
-            <p><strong>Phone: </strong>+91 70107 45391</p><hr>
-            <p><strong>Name: </strong>Dr. S. Meganathan</p>
-            <p><strong>Phone: </strong>+91 794433 84450</p>
-        </div>
-    
-        <div class="contact-card">
-            <h2>Organizing Secretary</h2>
-            <hr>
-            <p><strong>Name: </strong>Dr. K. Kannan</p>
-            <p><strong>Phone: </strong> +91 90037 82692</p><hr>
-            <p><strong>Name: </strong>Dr. C. Natarajan</p>
-            <p><strong>Phone: </strong> +91  99525 29575</p>
-        </div>
-        <div class="contact-card">
-            <p><strong>Email: </strong>icmat23@src.sastra.ac.in </p>
-        </div>
-    </div>
-    
-<hr>
+      </div>
+      <!-- .Jumbotron-->
 
-    <footer class="footer">
-        <div class="copyright-section">
-            <div class="container">
-                <div class="col-md-12">
-                    <div class="copytext text-center">&copy; All rights reserved |  <a href="https://www.sastra.edu/" target="_blank">SASTRA Deemed to be University</a></div>
-                </div>
+      <div style="padding-top: 5%" class="contact-grid">
+        <div class="contact-card">
+          <h2>Convenors</h2>
+          <hr />
+          <p><strong>Name: </strong>Dr. D. Narasimhan</p>
+          <p><strong>Phone: </strong>+91 94424 21988</p>
+          <hr />
+          <p><strong>Name: </strong>Dr. M. Sundararaman</p>
+          <p><strong>Phone: </strong>+91 99407 50345</p>
+        </div>
+
+        <div class="contact-card">
+          <h2>Co-Convenor</h2>
+          <hr />
+          <p><strong>Name: </strong>Dr. A. Srinivasan</p>
+          <p><strong>Phone: </strong>+91 70107 45391</p>
+          <hr />
+          <p><strong>Name: </strong>Dr. S. Meganathan</p>
+          <p><strong>Phone: </strong>+91 94433 84450</p>
+          <hr />
+          <p><strong>Name: </strong>Dr. S. Venkatesh</p>
+          <p><strong>Phone: </strong>+91 96000 91033</p>
+        </div>
+
+        <div class="contact-card">
+          <h2>Organizing Secretary</h2>
+          <hr />
+          <p><strong>Name: </strong>Dr. P. Rajadurai</p>
+          <p><strong>Phone: </strong> +91 96273 04422</p>
+          <hr />
+          <p><strong>Name: </strong>Dr. K. Parameswari</p>
+          <p><strong>Phone: </strong> +91 98949 95894</p>
+        </div>
+        <div class="contact-card p-4 border rounded shadow-sm">
+          
+
+            <div class="text-center mb-4" style="font-size: 20px;">
+                <strong>
+                    International Conference on Mathematics and its Applications in Technology 2025
+                </strong>
+                <br>
+                <hr class="my-4">
             </div>
-            <!-- .container -->
+        
+            <h6 class="text-center"> <strong> SRINIVASA RAMANUJAN CENTRE </strong></h6>
+            <p class="text-center mb-4">
+                SASTRA Deemed to be University,<br>
+                Kumbakonam - 612 001, Tamil Nadu, India
+            </p>
+        
+            <hr>
+        
+            <p class="text-center mb-4"><strong>Phone:</strong> +91 435 2426823, 2400822</p>
+            <p class="text-center mb-4"><strong>Email:</strong> <a href="mailto:icmat25@src.sastra.ac.in">icmat25@src.sastra.ac.in</a></p>
+        
+
+          
+        </div>
+      </div>
+      </div>
+ 
+    </div>
+      <hr />
+
+      <footer class="footer">
+        <div class="copyright-section">
+          <div class="container">
+            <div class="col-md-12">
+              <div class="copytext text-center">
+                &copy; All rights reserved |
+                <a href="https://www.sastra.edu/" target="_blank"
+                  >SASTRA Deemed to be University</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- .container -->
         </div>
         <!-- .copyright-section -->
-    </footer>
-    <!-- .footer -->
+      </footer>
+      <!-- .footer -->
+    </div>
+    <!-- #main-wrapper -->
 
-</div>
-<!-- #main-wrapper -->
+    <!-- jquery -->
+    <script src="js/jquery-2.1.4.min.js"></script>
 
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
 
-<!-- jquery -->
-<script src="js/jquery-2.1.4.min.js"></script>
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
 
-<!-- Bootstrap -->
-<script src="js/bootstrap.min.js"></script>
+    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
 
-<!-- Plugin JavaScript -->
-<script src="js/jquery.easing.min.js"></script>
-
-<!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
-
-
-<!--<script src="js/one-page-nav.js"></script>-->
-<script src="js/scripts.js"></script>
-</body>
+    <!--<script src="js/one-page-nav.js"></script>-->
+    <script src="js/scripts.js"></script>
+  </body>
 </html>

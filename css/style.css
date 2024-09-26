@@ -28,6 +28,8 @@ Author: uiCookies.com
 	14. Preloader / #preloader
 
 
+
+
 # [Color codes]
 
 # Body  (text): #888
@@ -35,6 +37,7 @@ Author: uiCookies.com
 # Theme Color (link color) #4286f4
 # Mid grey (sub header) #666666
 # -------------------------------------------------------------------*/
+
 
 body {
     font-family : 'Roboto', sans-serif;
@@ -72,7 +75,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 
 h1 {
-    font-size   : 27px;
+    font-size   : 25px;
     line-height : 1.2em;
     font-weight : 700;
     }
@@ -110,7 +113,7 @@ h6 {
  * LINK STYLE
  *------------------------------------------*/
 a {
-    color              : #4286f4;
+    color              : #5692f3;
     text-decoration    : none;
     -webkit-transition : all 0.3s ease 0s;
     -moz-transition    : all 0.3s ease 0s;
@@ -399,7 +402,7 @@ button:focus,
     }
 
 .jumbotron .content p.lead {
-    font-size   : 24px;
+    font-size   : 21px;
     line-height : 1.5em;
     color       : rgb(255, 255, 255);
     }
@@ -419,7 +422,7 @@ button:focus,
         }
 
     .jumbotron .content h1 {
-        font-size : 26px;
+        font-size : 23px;
         }
 
     .jumbotron .content p.lead {
