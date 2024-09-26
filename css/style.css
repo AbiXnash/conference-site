@@ -77,6 +77,10 @@ h6 {
   color: #0e1555;
 }
 
+img {
+  vertical-align: middle;
+}
+
 h1 {
   font-size: 25px;
   line-height: 1.2em;
@@ -140,6 +144,8 @@ a:focus {
 
 p {
   margin-bottom: 20px;
+  text-align: justify;
+  /* text-align-last: center; */
 }
 
 p.lead {
@@ -772,3 +778,40 @@ nav img {
   text-align: center;
   top: 65%;
 }
+
+.navbar-brand img {
+  /* height: 50px; Adjust the height as needed */
+  display: inline-block;
+
+  margin-top: 10px;
+  vertical-align: middle !important;
+}
+
+/* Ensure the image is always visible */
+.navbar-header {
+  flex-shrink: 0; /* Prevents the image from shrinking */
+}
+
+.navbar-right {
+  margin-left: auto; /* Ensures right alignment of the menu */
+}
+
+/* Adjust the size of the navbar toggle button */
+.navbar-toggle {
+  margin-top: 8px;
+}
+
+@media (min-width: 1200px) {
+  .navbar-brand img {
+    position: fixed;
+  }
+}
+
+section {
+  margin: 10%;
+}
+
+@media (max-width: 500px) {
+  section {
+    margin: 2%; /* 1 column on small screens */
+  }
