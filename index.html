@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,8 +16,9 @@
     <link href="css/style.css" rel="stylesheet">
     <style>
         body {
-	        font-family: 'Arial', sans-serif;
+            font-family: 'Arial', sans-serif;
         }
+
         section {
             margin: 3% !important;
         }
@@ -28,50 +30,62 @@
             overflow: hidden;
             display: flex;
             flex-wrap: wrap;
-            }
+        }
 
         /* Style for the image section */
-            .image-section1 {
+        .image-section1 {
             flex: 1;
             box-sizing: border-box;
             padding: 20px;
-            width: 400px; /* Set a fixed width for larger screens */
-            height: 300px; /* Set a fixed height */
-            overflow: hidden; /* Hide overflow content */
-            position: relative; /* Position relative for absolute positioning */
-            }
+            width: 400px;
+            /* Set a fixed width for larger screens */
+            height: 300px;
+            /* Set a fixed height */
+            overflow: hidden;
+            /* Hide overflow content */
+            position: relative;
+            /* Position relative for absolute positioning */
+        }
 
-            .image-section1 img {
+        .image-section1 img {
             width: 100%;
-            height: 100%; /* Set the height to 100% to match the container size */
+            height: 100%;
+            /* Set the height to 100% to match the container size */
             display: block;
             opacity: 0;
             transition: opacity 0.5s ease-in-out;
-            }
+        }
 
-            .image-section1 .transparent-block {
+        .image-section1 .transparent-block {
             width: 100%;
             height: 100%;
-            background: transparent; /* Set background to transparent */
+            background: transparent;
+            /* Set background to transparent */
             position: absolute;
             top: 0;
             left: 0;
-            }
+        }
 
-            /* Style for the dates section */
-            .dates-section {
+        /* Style for the dates section */
+        .dates-section {
             flex: 1;
             box-sizing: border-box;
             padding: 20px;
             background-color: #f4f4f4;
             margin-top: 20px;
-            }
+        }
 
-            /* Media query for responsive design */
-            @media (max-width: 768px) {
+        @media(max-width: 500px) {
+            body p {
+                font-size: 16px !important;
+            }
+        }
+        /* Media query for responsive design */
+        @media (max-width: 768px) {
             .container1 {
                 flex-direction: column;
             }
+
             .dates-section {
                 margin-top: 50px;
             }
@@ -79,306 +93,332 @@
             img {
                 height: 100px;
             }
+
             .image-section1 {
-                width: 100%; /* Take full width on smaller screens */
-                max-width: none; /* Remove the fixed width on smaller screens */
-            }
-            }
-            
-            table {
                 width: 100%;
-                padding: 10%;
-                border-collapse: collapse;
-                padding-top: 50px;
+                /* Take full width on smaller screens */
+                max-width: none;
+                /* Remove the fixed width on smaller screens */
             }
-            
-                /* Style for table headers */
-            th, td {
-                border: 1px solid #ddd;
-                padding: 10px;
-                text-align: left;
-            }
-            
-            th {
-                background-color: #f2f2f2;
-            }
+        }
+
+        table {
+            width: 100%;
+            padding: 10%;
+            border-collapse: collapse;
+            padding-top: 50px;
+        }
+
+        /* Style for table headers */
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
     </style>
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar">
-<div id="main-wrapper">
-    <!-- Page Preloader -->
-    <div id="preloader">
-        <div id="status">
-            <div class="status-mes"></div>
-        </div>
-    </div>
-
-    <header class="header">
-        <!-- Navigation -->
-        <nav class="navbar main-menu" role="navigation">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand page-scroll" href="https://www.sastra.edu/"> <img src="img/sas24.jpg" alt="SASTRA"></a>
-                </div>
-
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-                    <ul class="nav navbar-nav">
-                        <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                        <li class="hidden"><a href="#page-top"></a></li>
-                        <li><a class="page-scroll" href="index.html">Home</a></li>
-                        <li><a class="page-scroll" href="committee.html">Committee</a></li>
-                        <li><a class="page-scroll" href="call-for-paper.html">Call for Papers</a></li>
-                        <li><a class="page-scroll" href="keynote.html">Keynote</a></li>
-                        <li><a class="page-scroll" href="submission.html">Submission</a></li>
-                        <li><a class="page-scroll" href="publication.html">Publication</a></li>
-                        <li><a class="page-scroll" href="registration.html">Registration</a></li>
-                        <li><a class="page-scroll" href="venue.html">Venue</a></li>
-                        
-                        <li><a class="page-scroll" href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <!-- /.navbar-collapse -->
+    <div id="main-wrapper">
+        <!-- Page Preloader -->
+        <div id="preloader">
+            <div id="status">
+                <div class="status-mes"></div>
             </div>
-            <!-- /.container -->
-        </nav>
+        </div>
 
-        <!-- .nav -->
-
-    </header>
-
-    <div style="height: 130vh;" class="jumbotron text-center">
-        <div class="content">
-            <p class="lead" style="text-align: center;">
-                <strong class = "circle-border">ICMAT-2025 </strong>
-            </p> <hr>
-            <h1>International Conference on Mathematics and its Applications in Technology</h1><hr>
-            <!--<div class="scrolling-text">Your scrolling text goes here. Make it as long as you want!</div>-->
-            
-            <div  class="event-date"><strong style="font-weight: 300;"><em>March 28 - 29, 2025</em></strong></div>
-            <p style="text-align: center;"> Organized by </p>
-            <p class="lead" style="text-align: center;">
-                <b class = "circle-border"> Department of Mathematics &amp; <br> Department of Computer Science and Engineering, <br>
-                    <a href="https://www.sastra.edu/" target="_blank">Srinivasa Ramanujan Centre</a>
-                </b>
-                <div class="event-date"><strong style="font-weight: 170;"><em>Kumbakonam, Tamil Nadu, India - 612001</em></strong></div>
-            </p>
-            <a href="assets/ICMAT2025.pdf" download>
-                <button style="padding-top: .9%; padding-bottom: .9%;" type="button" class="btn btn-default btn-lg">Brochure</button>
-            </a>
+        <header class="header">
+            <!-- Navigation -->
+            <nav class="navbar main-menu" role="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse"
+                            data-target=".navbar-main-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand page-scroll" href="https://www.sastra.edu/"> <img src="img/sas24.jpg"
+                                alt="SASTRA"></a>
                     </div>
-    </div>
-    <!-- .Jumbotron-->
-  
-    <div style="padding-top: 50px;" class="section-title">
-        <h1>ICMAT 2025</h1>
-    </div>
 
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                        <ul class="nav navbar-nav">
+                            <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                            <li class="hidden"><a href="#page-top"></a></li>
+                            <li><a class="page-scroll" href="index.html">Home</a></li>
+                            <li><a class="page-scroll" href="committee.html">Committee</a></li>
+                            <li><a class="page-scroll" href="call-for-paper.html">Call for Papers</a></li>
+                            <li><a class="page-scroll" href="keynote.html">Keynote</a></li>
+                            <li><a class="page-scroll" href="submission.html">Submission</a></li>
+                            <li><a class="page-scroll" href="publication.html">Publication</a></li>
+                            <li><a class="page-scroll" href="registration.html">Registration</a></li>
+                            <li><a class="page-scroll" href="venue.html">Venue</a></li>
 
-    <section class="container1" style="margin: 0 auto !important;">
-        
-    <!-- Image Section -->
-    <div class="image-section1" id="imageSection1">
-        <!-- Transparent block as a placeholder -->
-        <div class="transparent-block"></div>
-        <!-- Image will be dynamically updated here -->
-        <img src="" alt="">
-      </div>
+                            <li><a class="page-scroll" href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </div>
+                <!-- /.container -->
+            </nav>
 
-    <!-- Dates Section -->
-    <div class="dates-section">
-      <table>
-        <thead>
-            <th colspan="2" ><h3>Important Dates</h3></th>
-        </thead>
-        <tbody>
-            <tr>
-                <td>
-                    <strong>Submission Date:</strong>
-                </td>
-                <td> January 20, 2025</td>
-            </tr>
-            <tr>
-                <td>
-                    <strong>Acceptance Notification:</strong> 
-                </td>
-                <td> February 20, 2025</td>
-            </tr>
-            <tr>
-                <td>
-                    <strong>Conference Registration:</strong> 
-                </td>
-                <td> March 20, 2025</td>
-            </tr>
-        </tbody>
-      </table>
-    </div>
-  </section>
+            <!-- .nav -->
 
+        </header>
 
-    <section style="padding-top: 50px;"  id="section-intro" class="section-wrapper about-event">
-        
-        <div class="container">
-            <div class="section-title">
-                <h1>PREVIOUS CONFERENCE</h1>
+        <div style="height: 130vh;" class="jumbotron text-center">
+            <div class="content">
+                <p class="lead" style="text-align: center;">
+                    <strong class="circle-border">ICMAT-2025 </strong>
+                </p>
+                <hr>
+                <h1>International Conference on Mathematics and its Applications in Technology</h1>
+                <hr>
+                <!--<div class="scrolling-text">Your scrolling text goes here. Make it as long as you want!</div>-->
+
+                <div class="event-date"><strong style="font-weight: 300;"><em>March 28 - 29, 2025</em></strong></div>
+                <p style="text-align: center;"> Organized by </p>
+                <p class="lead" style="text-align: center;">
+                    <b class="circle-border"> Department of Mathematics &amp; <br> Department of Computer Science and
+                        Engineering, <br>
+                        <a href="https://www.sastra.edu/" target="_blank">Srinivasa Ramanujan Centre</a>
+                    </b>
+                <div class="event-date"><strong style="font-weight: 170;"><em>Kumbakonam, Tamil Nadu, India -
+                            612001</em></strong></div>
+                </p>
+                <a href="assets/ICMAT2025.pdf" download>
+                    <button style="padding-top: .9%; padding-bottom: .9%;" type="button"
+                        class="btn btn-default btn-lg">Brochure</button>
+                </a>
             </div>
-            <p class="lead">
-                International Conference on Mathematics and its Applications in Technology-2023 was organized during March 24, 25 – 2023 in Hybrid mode. 12 invited talks were delivered and around 100 papers were presented. Selected papers were published in Multidisciplinary Science Journal and AIP Conference Proceedings; both SCOPUS indexed. 
-                <div style="display: flex; justify-content: center; align-items: center; border: 1px solid #ddd; padding: 20px; flex-wrap: wrap;">
+        </div>
+        <!-- .Jumbotron-->
+
+        <div style="padding-top: 50px;" class="section-title">
+            <h1>ICMAT 2025</h1>
+        </div>
+
+
+        <section class="container1" style="margin: 0 auto !important;">
+
+            <!-- Image Section -->
+            <div class="image-section1" id="imageSection1">
+                <!-- Transparent block as a placeholder -->
+                <div class="transparent-block"></div>
+                <!-- Image will be dynamically updated here -->
+                <img src="" alt="">
+            </div>
+
+            <!-- Dates Section -->
+            <div class="dates-section">
+                <table>
+                    <thead>
+                        <th colspan="2">
+                            <h3>Important Dates</h3>
+                        </th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <strong>Submission Date:</strong>
+                            </td>
+                            <td> January 20, 2025</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong>Acceptance Notification:</strong>
+                            </td>
+                            <td> February 20, 2025</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong>Conference Registration:</strong>
+                            </td>
+                            <td> March 20, 2025</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+
+        <section style="padding-top: 50px;" id="section-intro" class="section-wrapper about-event">
+
+            <div class="container">
+                <div class="section-title">
+                    <h1>PREVIOUS CONFERENCE</h1>
+                </div>
+                <p class="lead">
+                    International Conference on Mathematics and its Applications in Technology-2023 was organized during
+                    March 24, 25 – 2023 in Hybrid mode. 12 invited talks were delivered and around 100 papers were
+                    presented. Selected papers were published in Multidisciplinary Science Journal and AIP Conference
+                    Proceedings; both SCOPUS indexed.
+                <div
+                    style="display: flex; justify-content: center; align-items: center; border: 1px solid #ddd; padding: 20px; flex-wrap: wrap;">
                     <ul style="list-style-type: none; padding: 0; text-align: center;">
-                        <li><a href="https://malque.pub/ojs/index.php/msj/issue/view/91" target="_blank">Multidisciplinary Science Journal</a> &rarr;</li>
-                        <li><a href="https://pubs.aip.org/aip/acp/issue/3180/1" target="_blank">AIP Conference Proceedings</a> &rarr;</li>
+                        <li><a href="https://malque.pub/ojs/index.php/msj/issue/view/91"
+                                target="_blank">Multidisciplinary Science Journal</a> &rarr;</li>
+                        <li><a href="https://pubs.aip.org/aip/acp/issue/3180/1" target="_blank">AIP Conference
+                                Proceedings</a> &rarr;</li>
                     </ul>
                 </div>
-            </p>
-        </div>
-    </section>
-<hr>    <!-- .about-event -->
-    <section class="section-wrapper about-event">
-        <div class="container">
-            <div class="section-title">
-                <h1>ABOUT SASTRA</h1>
+                </p>
             </div>
-            <p class="lead">
-                A sprawling campus with a vibrant population of students, faculty and state-of-the art laboratories has made SASTRA a landmark in the educational map of India. SASTRA has reached national standing in terms of academic performance, co-curricular and extra-curricular activities and, the development and commitment to social service. SASTRA offers various Undergraduate, Postgraduate and Doctoral Programmes in Engineering, Arts, Science, Law and Management. The excellence of the academic programmes offered by the University is replicated in the ratings awarded by National Assessment and Accreditation Council (NAAC) which has reaccredited SASTRA with a maximum grade of A++ with score 3.76/4.00 in cycle IV, retaining the status of the Category I University.
-            </p>
-        </div>
-    </section>
-    <section  class="section-wrapper about-event">
-        <div class="container">
-            <div class="section-title">
-                <h1>ABOUT SRINIVASA RAMANUJAN CENTRE</h1>
-            </div>
-            <p class="lead">
-                SASTRA has reached national standing in terms of 
-academic performance, co-curricular, extra-curricular 
-activities and commitment to social service. SASTRA 
-offers various Undergraduate, Postgraduate and 
-Doctoral Programmes in Engineering, Arts, Science, 
-Law and Management. The excellence of the academic 
-programmes offered by the University is replicated in 
-the ratings awarded by National Assessment and 
-Accreditation Council (NAAC) which has reaccredited 
-SASTRA with a maximum grade of A++ with score 
-3.76/4.00 in cycle IV, retaining the status of the 
-Category I University. 
-            </p>
-            <p>
-                
- SASTRA established Srinivasa Ramanujan Centre 
- (SRC) in 2002 as a fitting tribute to the great 
- mathematician, Srinivasa Ramanujan who spent most of 
- his formative years in the temple town of Kumbakonam. 
- This centre also houses a museum called “House of 
- Ramanujan Mathematics”. 
- SASTRA purchased and restored the house where 
- Srinivasa Ramanujan lived and spent his childhood 
- days and maintaining as an international monument.
- 
-            </p>
-        </div>
-    </section>
-    <hr>
-    <section style="padding-top: 50px;" class="section-wrapper about-event">
-        <div class="container">
-            <div class="section-title">
-                <h1>SASTRA-RAMANUJAN AWARD</h1>
-            </div>
-            <p class="lead">
-                The prestigious SASTRA-RAMANUJAN Award was 
-                instituted in 2005 to honour young mathematicians (age 
-                limit of 32) for their outstanding contributions in the area 
-                of Mathematics influenced by Srinivasa Ramanujan. 
-                The award comprises 10,000 USD and a citation. The 
-                award has gained global recognition as one of the top 
-                most awards given to mathematicians. Till now 21 
-                mathematicians have received the award. Six among 
-                those 21 have gone on to win Fields medal 
-                subsequently.
-            </p>
-        </div>
-    </section>
-    <hr>
-    <section  class="section-wrapper about-event">
-        <div class="container">
-            <div class="section-title">
-                <h1>ABOUT THE DEPARTMENT</h1>
-            </div>
-            <p class="lead">
-                The Department of Mathematics was established in 
-2002. The Department has 13 faculty members with rich 
-research and teaching experience. The Department has 
-established computer laboratory for Discrete 
-Mathematics under the FIST Programme. The 
-Department is supported by NBHM Library grant. 
- The Department of Computer Science and 
-Engineering is also established in 2002 and is the 
-biggest department with 54 faculty rich in industrial, 
-research and academic background. The department 
-has state-of-art laboratories with 360 high performance 
-computers, several licensed softwares along with 
-Netsim and MATLAB2023.
-            </p>
-        </div>
-    </section>
-    <hr>
-
-    <footer class="footer">
-        <div class="copyright-section">
+        </section>
+        <hr> <!-- .about-event -->
+        <section class="section-wrapper about-event">
             <div class="container">
-                <div class="col-md-12">
-                    <div class="copytext text-center">&copy; All rights reserved |  <a href="https://www.sastra.edu/" target="_blank">SASTRA Deemed to be University</a></div>
+                <div class="section-title">
+                    <h1>ABOUT SASTRA</h1>
                 </div>
+                <p class="lead">
+                    A sprawling campus with a vibrant population of students, faculty and state-of-the art laboratories
+                    has made SASTRA a landmark in the educational map of India. SASTRA has reached national standing in
+                    terms of academic performance, co-curricular and extra-curricular activities and, the development
+                    and commitment to social service. SASTRA offers various Undergraduate, Postgraduate and Doctoral
+                    Programmes in Engineering, Arts, Science, Law and Management. The excellence of the academic
+                    programmes offered by the University is replicated in the ratings awarded by National Assessment and
+                    Accreditation Council (NAAC) which has reaccredited SASTRA with a maximum grade of A++ with score
+                    3.76/4.00 in cycle IV, retaining the status of the Category I University.
+                </p>
             </div>
-            <!-- .container -->
-        </div>
-        <!-- .copyright-section -->
-    </footer>
-    <!-- .footer -->
+        </section>
+        <section class="section-wrapper about-event">
+            <div class="container">
+                <div class="section-title">
+                    <h1>ABOUT SRINIVASA RAMANUJAN CENTRE</h1>
+                </div>
+                <p class="lead">
+                    SASTRA has reached national standing in terms of
+                    academic performance, co-curricular, extra-curricular
+                    activities and commitment to social service. SASTRA
+                    offers various Undergraduate, Postgraduate and
+                    Doctoral Programmes in Engineering, Arts, Science,
+                    Law and Management. The excellence of the academic
+                    programmes offered by the University is replicated in
+                    the ratings awarded by National Assessment and
+                    Accreditation Council (NAAC) which has reaccredited
+                    SASTRA with a maximum grade of A++ with score
+                    3.76/4.00 in cycle IV, retaining the status of the
+                    Category I University.
+                </p>
+                <p class="lead">
+                    SASTRA established Srinivasa Ramanujan Centre
+                    (SRC) in 2002 as a fitting tribute to the great
+                    mathematician, Srinivasa Ramanujan who spent most of
+                    his formative years in the temple town of Kumbakonam.
+                    This centre also houses a museum called “House of
+                    Ramanujan Mathematics”.
+                    SASTRA purchased and restored the house where
+                    Srinivasa Ramanujan lived and spent his childhood
+                    days and maintaining as an international monument.
+                </p>
+            </div>
+        </section>
+        <hr>
+        <section style="padding-top: 50px;" class="section-wrapper about-event">
+            <div class="container">
+                <div class="section-title">
+                    <h1>SASTRA-RAMANUJAN AWARD</h1>
+                </div>
+                <p class="lead">
+                    The prestigious SASTRA-RAMANUJAN Award was
+                    instituted in 2005 to honour young mathematicians (age
+                    limit of 32) for their outstanding contributions in the area
+                    of Mathematics influenced by Srinivasa Ramanujan.
+                    The award comprises 10,000 USD and a citation. The
+                    award has gained global recognition as one of the top
+                    most awards given to mathematicians. Till now 21
+                    mathematicians have received the award. Six among
+                    those 21 have gone on to win Fields medal
+                    subsequently.
+                </p>
+            </div>
+        </section>
+        <hr>
+        <section class="section-wrapper about-event">
+            <div class="container">
+                <div class="section-title">
+                    <h1>ABOUT THE DEPARTMENT</h1>
+                </div>
+                <p class="lead">
+                    The Department of Mathematics was established in
+                    2002. The Department has 13 faculty members with rich
+                    research and teaching experience. The Department has
+                    established computer laboratory for Discrete
+                    Mathematics under the FIST Programme. The
+                    Department is supported by NBHM Library grant.
+                    The Department of Computer Science and
+                    Engineering is also established in 2002 and is the
+                    biggest department with 54 faculty rich in industrial,
+                    research and academic background. The department
+                    has state-of-art laboratories with 360 high performance
+                    computers, several licensed softwares along with
+                    Netsim and MATLAB2023.
+                </p>
+            </div>
+        </section>
+        <hr>
 
-</div>
-<!-- #main-wrapper -->
+        <footer class="footer">
+            <div class="copyright-section">
+                <div class="container">
+                    <div class="col-md-12">
+                        <div class="copytext text-center">&copy; All rights reserved | <a href="https://www.sastra.edu/"
+                                target="_blank">SASTRA Deemed to be University</a></div>
+                    </div>
+                </div>
+                <!-- .container -->
+            </div>
+            <!-- .copyright-section -->
+        </footer>
+        <!-- .footer -->
 
-<script>
+    </div>
+    <!-- #main-wrapper -->
 
-const imageSection1 = document.getElementById('imageSection1');
-    const imageFolder = 'img/';
-    const numImages = 10;
-    let currentIndex = 1;
+    <script>
 
-    function changeImage() {
-      const imgElement = imageSection1.querySelector('img');
-      imgElement.style.opacity = 0;
-      setTimeout(() => {
-        imgElement.src = `${imageFolder}${currentIndex}.jpg`;
-        imgElement.style.opacity = 1;
-        currentIndex = (currentIndex % numImages) + 1;
-      }, 500);
-    }
+        const imageSection1 = document.getElementById('imageSection1');
+        const imageFolder = 'img/';
+        const numImages = 10;
+        let currentIndex = 1;
 
-    setInterval(changeImage, 3000);
-</script>
+        function changeImage() {
+            const imgElement = imageSection1.querySelector('img');
+            imgElement.style.opacity = 0;
+            setTimeout(() => {
+                imgElement.src = `${imageFolder}${currentIndex}.jpg`;
+                imgElement.style.opacity = 1;
+                currentIndex = (currentIndex % numImages) + 1;
+            }, 500);
+        }
 
-<!-- jquery -->
-<script src="js/jquery-2.1.4.min.js"></script>
+        setInterval(changeImage, 3000);
+    </script>
 
-<!-- Bootstrap -->
-<script src="js/bootstrap.min.js"></script>
+    <!-- jquery -->
+    <script src="js/jquery-2.1.4.min.js"></script>
 
-<!-- Plugin JavaScript -->
-<script src="js/jquery.easing.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
 
-<!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+
+    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
 
 
-<!--<script src="js/one-page-nav.js"></script>-->
-<script src="js/scripts.js"></script>
+    <!--<script src="js/one-page-nav.js"></script>-->
+    <script src="js/scripts.js"></script>
 </body>
+
 </html>
