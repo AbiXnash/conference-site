@@ -812,6 +812,9 @@ section {
 }
 
 @media (max-width: 500px) {
+  body {
+    font-size: 14px;
+  }
   section {
     margin: 2%; /* 1 column on small screens */
   }
