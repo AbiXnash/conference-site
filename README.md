@@ -1,55 +1,44 @@
 # ICMAT 2025 Conference Site
 
-Welcome to the official repository for the ICMAT 2025 Conference Site.
+The website for **ICMAT 2025**, the International Conference on Mathematics and its Applications in Technology,
+hosted at SASTRA (SRC, Kumbakonam). It's a static Bootstrap 3 + jQuery site.
 
-## Table of Contents
+## Pages
 
-- [Introduction](#introduction)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
+| Page | What it is |
+|------|------------|
+| `index.html` | Home: about the conference and the departments, important dates |
+| `call-for-paper.html` | Call for papers and topics |
+| `submission.html` | How to submit a paper |
+| `registration.html` | Registration and fees |
+| `publication.html` | Publication details |
+| `keynote.html` | Keynote speakers |
+| `committee.html` | Committees |
+| `venue.html` | Venue |
+| `contact.html` | Contact |
 
-## Introduction
+The brochure is in `img/ICMAT2025_Brochure.pdf` and the conference PDF in `assets/ICMAT2025.pdf`.
 
-This repository contains the source code for the ICMAT 2025 conference website. The site provides information about the conference, including schedules, speakers, and registration details.
+## Run it
 
-## Installation
-
-To set up the project locally, follow these steps:
-
-1. Clone the repository:
-   ```sh
-   git clone https://github.com/AbiXnash/ICMAT2025.git
-   ```
-2. Navigate to the project directory:
-   ```sh
-   cd ICMAT2025
-   ```
-3. Install the dependencies:
-   ```sh
-   npm install
-   ```
-
-## Usage
-
-To start the development server, run:
+There's no build step. Open `index.html` in a browser, or serve the folder:
 
 ```sh
-npm start
+git clone https://github.com/AbiXnash/conference-site.git
+cd conference-site
+python3 -m http.server 8000
 ```
 
-Open your browser and navigate to `http://localhost:3000` to view the site.
+`.github/workflows/static.yml` deploys the site to GitHub Pages on every push to `main`.
 
 ## Contributing
 
-We welcome contributions! Please read our [contributing guidelines](CONTRIBUTING.md) for more details.
+Please read the [contributing guidelines](CONTRIBUTING.md).
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE.md) file for details.
+MIT, see [LICENSE.md](LICENSE.md).
 
 ## Contact
 
-For any inquiries, please contact us at [abinashs2704@gmail.com](mailto:abinashs2704@gmail.com).
+For any inquiries, contact [abinashs2704@gmail.com](mailto:abinashs2704@gmail.com).
